@@ -1,4 +1,4 @@
-# site_name: Žiga's Blog
+# site_name: Žiga's BlogG
 # theme:
 #   name: material
 #   features:
@@ -81,12 +81,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
-  - pymdownx.arithmatex:
-      generic: true
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   # - pymdownx.emoji:
   #     emoji_index: !!python/name:materialx.emoji.twemoji
@@ -94,3 +94,13 @@ markdown_extensions:
 
 # copyright: |
 #   &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">James Willett</a>
+plugins:
+  - blog:
+      blog_dir: . 
+  - search
+  - tags
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
