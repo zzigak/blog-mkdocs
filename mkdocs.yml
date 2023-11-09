@@ -35,7 +35,7 @@
 
 
 site_name: Žiga's Blog
-site_url: https://zzigak-blog.github.io
+site_url: blog
 theme:
   name: material
   logo: img/white-logo.png
